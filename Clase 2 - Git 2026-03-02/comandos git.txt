@@ -1,0 +1,44 @@
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --list
+git init
+git status
+git add .
+
+(touch archivo.txt)
+
+git commit -m ""
+git log
+
+git checkout "6 primeros digitos del commit"
+	(para moverse entre el tiempo)
+
+git diff
+
+git reset --hard "6 primeros digitos del commit" (restaurar una version anterior)
+
+(para restaurar un archivo especifico)
+git checkout "6 primeros digitos del commit" -- "nombre del archivo"
+
+git log --oneline (para ver los commit resumido en una sola linea)
+git log --oneline --graph --decorate --all
+
+git branch "nombre de la rama a crear"
+
+git checkout "nombre de la rama a cambiar"
+
+git branch (muestra las ramas existentes)
+
+git merge (nombre de la rama a unir con la principal, se debe estar en la rama main al hacer el merge)
+
+history | grep git (para ver la lista de comandos ejecutados)
+
+git chekout -b (nombre de la rama), crear la rama y se va a la rama nueva
+
+git clone "url" (para clonar repositorio de la nube)
+git clone https://github.com/LuisOR64/git_example.git
+
+git push origin main (subir los cambios a la nube de git hub)
+
+git pull origin main (obtener los cambios del proyecto nube de git hub)
+
