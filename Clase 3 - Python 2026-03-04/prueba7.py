@@ -38,6 +38,7 @@ def run():
                 operator(option)
         else:
             print("Opcion no válida")
+            pause()
         
 run()
 clear()
